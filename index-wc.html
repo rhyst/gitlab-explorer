@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <gitlab-explorer></gitlab-explorer>
+    <script src="./index-wc.js"></script>
+    <script>
+      const element = document.querySelector("gitlab-explorer");
+      element.setAttribute("app-id", process.env.APP_ID);
+      element.setAttribute("redirect-url", process.env.REDIRECT_URL);
+      element.setAttribute("repository-path", process.env.REPOSITORY_PATH);
+      element.setAttribute("root-path", process.env.ROOT_PATH);
+    </script>
+  </body>
+</html>

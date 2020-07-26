@@ -1,0 +1,44 @@
+{
+  "name": "gitlab-explorer",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "feather-icons": "^4.28.0",
+    "gitlab": "^14.2.2",
+    "lodash": "^4.17.15",
+    "mini.css": "^3.0.1",
+    "react": "^16.13.1",
+    "react-collapsible": "^2.8.0",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/lodash": "^4.14.158",
+    "@types/node": "^14.0.26",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "less": "^3.9.0",
+    "parcel": "^2.0.0-beta.1",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  },
+  "staticFiles": {
+    "staticPath": "static",
+    "watcherGlob": "**"
+  },
+  "scripts": {
+    "clean": "rm -rf .parcel-cache && rm -rf dist",
+    "dev-react": "npm run clean && parcel  index-react.html",
+    "dev-wc": "npm run clean && parcel index-wc.html"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}

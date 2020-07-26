@@ -1,0 +1,106 @@
+html,
+body,
+:host {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #484848;
+  font-family: sans-serif;
+}
+
+main {
+  width: fit-content;
+  border-top: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+}
+
+/* HELPER */
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-contents {
+  text-align: center;
+}
+
+/* ICONS */
+
+.feather {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.feather.small {
+  width: 10px;
+  height: 10px;
+}
+
+.feather.bold {
+  stroke-width: 4;
+}
+
+.is-open .feather.rotate {
+  transform: rotate(180deg);
+}
+
+/* FILE LIST */
+
+.top-level {
+  width: fit-content;
+  max-width: 100%;
+}
+
+.level {
+  border-left: 1px solid #e2e2e2;
+  margin-left: 16px;
+}
+
+.folder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0px 4px 8px;
+  border-bottom: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+}
+
+.file > span,
+.folder > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file.new {
+  background: #b2dca1;
+}
+
+.file.delete {
+  background: #f5caca;
+}
+
+.buttons {
+  text-align: right;
+  border-bottom: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+}
